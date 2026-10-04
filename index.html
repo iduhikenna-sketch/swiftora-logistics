@@ -4,115 +4,93 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SWIFTORA LOGISTICS</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{background:#fff;color:#10233f}
-.container{width:min(1180px,92%);margin:auto}
-.header{background:#061e3a;color:#fff;padding:12px 0;position:sticky;top:0;z-index:100}
-.header-inner{display:flex;align-items:center;justify-content:space-between}
-.logo{display:flex;align-items:center;gap:8px;font-weight:900;letter-spacing:.5px}
-.logo-icon{width:32px;height:32px;background:#fff;color:#061e3a;display:grid;place-items:center;border-radius:6px;font-weight:900}
-.nav{display:flex;align-items:center;gap:22px}
-.nav a{color:#a9c2e0;text-decoration:none;font-size:13px;font-weight:700}
-.nav a.active{color:#4db5ff;border-bottom:2px solid #4db5ff;padding-bottom:3px}
-.btn{border:1px solid #3a5a7d;color:#fff;padding:6px 14px;border-radius:6px;font-size:12px;text-decoration:none;font-weight:700}
-.btn-login{border:none;color:#c9d9ec;margin-left:6px}
-.hero{background:#081d39;position:relative;overflow:hidden;color:#fff;padding:28px 0 36px}
-.hero-bg{position:absolute;right:0;top:0;bottom:0;width:58%;background:url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200") center/cover;opacity:.35;mask-image:linear-gradient(to right, transparent, black 30%)}
-.hero-inner{position:relative;z-index:2;display:flex;justify-content:space-between;gap:20px}
-.hero-left{flex:1;max-width:520px}
-.hero-left h1{font-size:42px;line-height:1.05;letter-spacing:-1px}
-.hero-left h1 span{color:#43b5d4}
-.hero-left p{color:#b9d0e8;font-size:13px;line-height:1.6;margin:12px 0 18px;max-width:460px}
-.track{position:relative;background:#fff;border-radius:8px;display:flex;align-items:center;padding:5px 5px 5px 14px;max-width:460px}
-.track input{flex:1;border:none;outline:none;font-size:13px;color:#10233f}
-.track .icons{display:flex;gap:4px}
-.track .icons div{width:36px;height:32px;display:grid;place-items:center;border-radius:6px;cursor:pointer}
-.i1{color:#5a718a}.i2{background:#0a1931;color:#fff}
-.badges{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap}
-.badge{display:flex;align-items:center;gap:6px;font-size:11px}
-.badge b{display:block;color:#fff;font-size:12px;line-height:1.1}
-.badge small{display:block;color:#8fb0d0;font-size:10px}
-.badge-icon{width:28px;height:28px;border-radius:50%;background:rgba(67,181,212,.15);color:#43b5d4;display:grid;place-items:center;font-size:14px}
-.hero-right{flex:1;position:relative;min-height:280px}
-.hero-right img{position:absolute;width:100%;height:100%;object-fit:cover;opacity:0}
-.trucks{position:absolute;bottom:-10px;right:0;width:100%;display:flex;gap:10px;justify-content:end;align-items:end}
-.trucks img{width:46%;border-radius:6px}
-.planes{position:absolute;top:10px;right:10px;width:100%;height:70%}
-.plane{position:absolute;right:0;top:0;font-size:40px}
-.services{padding:44px 0;background:#fff}
-.services h2{text-align:center;font-size:26px}
-.services .sub{text-align:center;color:#6b7f97;font-size:12px;margin:6px auto 22px;max-width:520px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.card{border:1px solid #e9eef4;border-radius:10px;padding:18px;background:#fff}
-.card-icon{width:46px;height:46px;margin-bottom:10px}
-.card h3{font-size:14px;margin-bottom:6px}
-.card p{font-size:11px;color:#6b7f97;line-height:1.5;min-height:58px}
-.card small{font-size:10px;font-weight:800;color:#10233f;display:block;margin-top:10px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:22px 0;border-top:1px solid #eef2f7;margin-top:26px;text-align:left}
-.stats h3{font-size:24px}.stats p{font-size:11px;color:#6b7f97}
-.stats small{font-size:10px;font-weight:800;color:#10233f}
-.cert{display:flex;gap:8px;align-items:center;margin-top:14px;font-size:10px;font-weight:800}
-.cert-icon{width:26px;height:26px;background:#f2f6fb;border-radius:50%;display:grid;place-items:center}
-@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero-inner{flex-direction:column}.nav{display:none}.hero-bg{width:100%}}
-@media(max-width:520px){.grid{grid-template-columns:1fr}.hero-left h1{font-size:32px}}
+body{background:#0f3b6b;padding:12px}
+.page{background:#fff;border-radius:18px;overflow:hidden;max-width:1200px;margin:auto;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.container{width:92%;margin:auto}
+.header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;background:#fff}
+.logo{font-weight:900;line-height:1}
+.logo .top{color:#0f3b6b;font-size:15px;letter-spacing:.5px}
+.logo .bot{color:#ff8c2f;font-size:12px}
+.menu{display:flex;gap:14px;align-items:center}
+.menu a{color:#4a5a72;text-decoration:none;font-size:12px;font-weight:600}
+.menu a.active{color:#0f3b6b;border-bottom:2px solid #ff8c2f;padding-bottom:3px}
+.menu .quote{background:#0f3b6b;color:#fff;padding:7px 14px;border-radius:6px;font-size:11px}
+.menu .login{border:1px solid #d7deea;padding:6px 12px;border-radius:6px;color:#0f3b6b}
+.hero{position:relative;height:460px;background:#000 url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200') center/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,59,107,.9) 0%,rgba(15,59,107,.2) 60%,rgba(0,0,0,.1) 100%)}
+.hero-content{position:relative;z-index:2;padding:60px 0 0 4%}
+.hero h1{color:#000;font-size:42px;line-height:1.1;font-weight:900;max-width:360px;color:#111}
+.hero h1 span{color:#000}
+.hero p{color:#fff;font-size:12px;margin:12px 0 18px;max-width:380px;line-height:1.6;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+.track-btn{background:#fff;color:#0f3b6b;padding:10px 18px;border-radius:8px;font-size:12px;font-weight:800;text-decoration:none;display:inline-flex;gap:6px;align-items:center;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.badges{position:absolute;bottom:-28px;left:4%;right:4%;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.badge{background:#fff;border-radius:10px;padding:12px;display:flex;gap:10px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.12);border:1px solid #eef2f7}
+.badge i{width:32px;height:32px;background:#eaf2ff;border-radius:8px;display:grid;place-items:center;color:#0f3b6b;font-size:16px}
+.badge b{font-size:11px;display:block}.badge small{font-size:10px;color:#6b7f97}
+.services{padding:70px 0 24px;text-align:center}
+.services h2{font-size:26px;color:#0a1931}.services .sub{font-size:12px;color:#6b7f97;margin:8px auto 22px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:left}
+.card{border:1px solid #eef2f7;border-radius:12px;overflow:hidden;background:#fff}
+.card img{width:100%;height:110px;object-fit:cover}
+.card-body{padding:12px}
+.card h3{font-size:13px;margin-bottom:4px}.card p{font-size:10px;color:#6b7f97;line-height:1.5;min-height:52px}.card small{background:#f2f6fb;padding:3px 6px;border-radius:4px;font-size:9px;font-weight:700;margin-right:4px}
+.stats{background:#0f3b6b;color:#fff;padding:18px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}
+.stats .item{text-align:center}
+.stats h3{font-size:24px}.stats p{font-size:10px;color:#a9c2e0}
+.trusted{background:#fff;border-radius:10px;color:#0a1931;padding:10px;display:flex;flex-direction:column;gap:6px;grid-column:span 2}
+.trusted-top{font-size:12px;font-weight:800;text-align:center}
+.trusted-icons{display:flex;justify-content:space-around;font-size:8px;font-weight:800;text-align:center}
+.bottom{display:flex;gap:20px;padding:30px 0;align-items:center}
+.bottom-left{flex:1}.bottom-right{flex:1;background:#eaf2ff;border-radius:16px;padding:20px}
+.bottom h2{font-size:28px;color:#0a1931;line-height:1.1}.bottom p{font-size:11px;color:#6b7f97;margin-top:8px;max-width:300px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.badges{grid-template-columns:repeat(2,1fr);position:relative;bottom:auto;left:auto;right:auto;margin:-10px auto 10px;width:92%}.hero{height:380px}.hero h1{font-size:28px}.stats{grid-template-columns:repeat(2,1fr)}.menu a{display:none}.menu .quote,.menu .login{display:block}}
 </style>
 </head>
 <body>
+<div class="page">
+<div class="container header">
+<div class="logo"><div class="top">SWIFTORA</div><div class="bot">LOGISTICS</div></div>
+<div class="menu"><a class="active" href="#">Home</a><a href="#">Services</a><a href="#">Solutions</a><a href="#">Tracking</a><a href="#">About</a><a href="#">Contact</a><a class="quote" href="#">Get a Quote</a><a class="login" href="#">Log In</a><span>🔍</span></div>
+</div>
 
-<div class="header"><div class="container header-inner">
-<div class="logo"><div class="logo-icon">S</div> SWIFTORA <span style="font-weight:400;font-size:11px;opacity:.7">LOGISTICS</span></div>
-<div class="nav"><a class="active" href="#">Home</a><a href="#services">Services</a><a href="#">Solutions</a><a href="#">Tracking</a><a href="#">About</a><a href="#">Contact</a><a class="btn" href="#">Get a Quote</a><a class="btn btn-login" href="#">Log In</a><span>🔍</span></div>
-</div></div>
-
-<section class="hero">
-<div class="hero-bg"></div>
-<div class="container hero-inner">
-<div class="hero-left">
-<h1><span>Delivering</span> the Future of Logistics</h1>
+<div class="hero">
+<div class="hero-content container">
+<h1>Delivering the Future of Logistics</h1>
 <p>Fast, reliable, and sustainable logistics solutions powered by real-time tracking and global reach across 180+ countries.</p>
-<div class="track"><input id="trackInput" placeholder="Track Your Shipment"><div class="icons"><div class="i1">🔍</div><div class="i2">🔍</div></div></div>
-<div class="badges">
-<div class="badge"><div class="badge-icon">24/7</div><div><b>24/7</b><small>Support</small></div></div>
-<div class="badge"><div class="badge-icon">⚙️</div><div><b>180+</b><small>Countries</small></div></div>
-<div class="badge"><div class="badge-icon">♻️</div><div><b>Carbon Neutral</b><small>Certified</small></div></div>
+<a class="track-btn" href="#">Track Your Shipment →</a>
 </div>
-<div id="trackResult" style="margin-top:12px;font-size:12px"></div>
-</div>
-<div class="hero-right">
-<div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(8,29,57,.8));"></div>
-<div style="position:absolute;bottom:0;right:0;width:90%;text-align:right;font-size:70px;opacity:.9">✈️ 🚛 🚢</div>
+<div class="badges container">
+<div class="badge"><i>24/7</i><div><b>24/7</b><small>Support</small></div></div>
+<div class="badge"><i>🏢</i><div><b>180+</b><small>Countries</small></div></div>
+<div class="badge"><i>♻️</i><div><b>Carbon Neutral</b><small>Certified</small></div></div>
+<div class="badge"><i>🚚</i><div><b>Explore</b><small>Services</small></div></div>
 </div>
 </div>
-</section>
 
-<section class="services" id="services"><div class="container">
+<div class="services container">
 <h2>Our Services</h2>
 <p class="sub">Comprehensive solutions tailored to keep your supply chain moving efficiently and reliably.</p>
 <div class="grid">
-<div class="card"><div class="card-icon">✈️</div><h3>Air Freight</h3><p>Express air shipping for time-critical shipments worldwide with real-time monitoring.</p><small>Fast-Reliable</small></div>
-<div class="card"><div class="card-icon">🏭</div><h3>Warehousing</h3><p>Secure warehousing and fulfillment centers with smart inventory management.</p><small>Secure Smart</small></div>
-<div class="card"><div class="card-icon">🚢</div><h3>Ocean Freight</h3><p>Cost-effective ocean freight solutions with global port coverage and customs support.</p><small>Global Scalable</small></div>
-<div class="card"><div class="card-icon">🚚</div><h3>Express Delivery</h3><p>Last-mile delivery powered by AI route optimization and same-day delivery options.</p><small>Fast On-Demand</small></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400"><div class="card-body"><h3>Air Freight</h3><p>Express air shipping for time-critical shipments worldwide with real-time monitoring.</p><small>Fast-Reliable</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?w=400"><div class="card-body"><h3>Warehousing</h3><p>Secure warehousing and fulfillment centers with smart inventory management.</p><small>Secure</small><small>Smart</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1494412651409-8963ce7935b4?w=400"><div class="card-body"><h3>Ocean Freight</h3><p>Cost-effective ocean freight solutions with global port coverage and customs support.</p><small>Global</small><small>Scalable</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400"><div class="card-body"><h3>Express Delivery</h3><p>Last-mile delivery powered by AI route optimization and same-day delivery options.</p><small>Fast On-Demand</small></div></div>
+</div>
 </div>
 
-<div class="stats">
-<div><h3>10K+</h3><p>Shipments Monthly</p><div class="cert"><div class="cert-icon">✈️</div> IATA<br>Certified</div></div>
-<div><h3>99.8%</h3><p>On-Time Delivery</p><div class="cert"><div class="cert-icon">♻️</div> Carbon<br>Neutral</div></div>
-<div><p style="font-weight:800;color:#10233f">Trusted by industry leaders worldwide<br>ISO 9001</p><div class="cert"><div class="cert-icon">✓</div> Carbon<br>Neutral</div></div>
-<div><h3>500+</h3><p>Partners Worldwide</p><div class="cert"><div class="cert-icon">🌐</div> GDP<br>Compliant</div></div>
+<div class="stats container">
+<div class="item"><h3>10K+</h3><p>Shipments Monthly</p></div>
+<div class="item"><h3>99.8%</h3><p>On-Time Delivery</p></div>
+<div class="trusted"><div class="trusted-top">Trusted by industry leaders worldwide</div><div class="trusted-icons"><div>ISO<br>ISO 9001</div><div>500+<br>Partners Worldwide</div><div>IATA<br>Certified</div><div>Carbon<br>Neutral</div><div>GDP<br>Compliant</div></div></div>
 </div>
 
-</div></section>
+<div class="bottom container">
+<div class="bottom-left"><h2>Delivering the<br>Logistics</h2><p>Fast, reliable and sustainable logistics solutions powered by+ countries.</p></div>
+<div class="bottom-right"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600" style="width:100%;border-radius:12px"></div>
+</div>
 
-<script>
-document.querySelector('.track').addEventListener('click',function(){
- let v=document.getElementById('trackInput').value.trim();
- let r=document.getElementById('trackResult');
- if(!v){r.innerHTML='<span style=color:#ff9>Enter tracking number</span>';return}
- r.innerHTML='<div style=background:#fff;color:#061e3a;padding:10px;border-radius:6px>Tracking <b>'+v+'</b> - In transit at Warri Hub</div>';
-});
-</script>
+</div>
 </body>
 </html>
