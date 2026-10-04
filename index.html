@@ -5,67 +5,67 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SWIFTORA LOGISTICS</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
-body{background:#0f3b6b;padding:12px}
-.page{background:#fff;border-radius:18px;overflow:hidden;max-width:1200px;margin:auto;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#123a6a;padding:12px}
+.page{background:#fff;border-radius:20px;overflow:hidden;max-width:1100px;margin:auto}
 .container{width:92%;margin:auto}
-.header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;background:#fff}
-.logo{font-weight:900;line-height:1}
-.logo .top{color:#0f3b6b;font-size:15px;letter-spacing:.5px}
-.logo .bot{color:#ff8c2f;font-size:12px}
-.menu{display:flex;gap:14px;align-items:center}
-.menu a{color:#4a5a72;text-decoration:none;font-size:12px;font-weight:600}
-.menu a.active{color:#0f3b6b;border-bottom:2px solid #ff8c2f;padding-bottom:3px}
-.menu .quote{background:#0f3b6b;color:#fff;padding:7px 14px;border-radius:6px;font-size:11px}
-.menu .login{border:1px solid #d7deea;padding:6px 12px;border-radius:6px;color:#0f3b6b}
-.hero{position:relative;height:460px;background:#000 url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200') center/cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,59,107,.9) 0%,rgba(15,59,107,.2) 60%,rgba(0,0,0,.1) 100%)}
-.hero-content{position:relative;z-index:2;padding:60px 0 0 4%}
-.hero h1{color:#000;font-size:42px;line-height:1.1;font-weight:900;max-width:360px;color:#111}
-.hero h1 span{color:#000}
-.hero p{color:#fff;font-size:12px;margin:12px 0 18px;max-width:380px;line-height:1.6;text-shadow:0 1px 3px rgba(0,0,0,.5)}
-.track-btn{background:#fff;color:#0f3b6b;padding:10px 18px;border-radius:8px;font-size:12px;font-weight:800;text-decoration:none;display:inline-flex;gap:6px;align-items:center;box-shadow:0 4px 12px rgba(0,0,0,.2)}
-.badges{position:absolute;bottom:-28px;left:4%;right:4%;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
-.badge{background:#fff;border-radius:10px;padding:12px;display:flex;gap:10px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.12);border:1px solid #eef2f7}
-.badge i{width:32px;height:32px;background:#eaf2ff;border-radius:8px;display:grid;place-items:center;color:#0f3b6b;font-size:16px}
-.badge b{font-size:11px;display:block}.badge small{font-size:10px;color:#6b7f97}
-.services{padding:70px 0 24px;text-align:center}
-.services h2{font-size:26px;color:#0a1931}.services .sub{font-size:12px;color:#6b7f97;margin:8px auto 22px;max-width:600px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:left}
-.card{border:1px solid #eef2f7;border-radius:12px;overflow:hidden;background:#fff}
-.card img{width:100%;height:110px;object-fit:cover}
-.card-body{padding:12px}
-.card h3{font-size:13px;margin-bottom:4px}.card p{font-size:10px;color:#6b7f97;line-height:1.5;min-height:52px}.card small{background:#f2f6fb;padding:3px 6px;border-radius:4px;font-size:9px;font-weight:700;margin-right:4px}
-.stats{background:#0f3b6b;color:#fff;padding:18px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:24px}
-.stats .item{text-align:center}
-.stats h3{font-size:24px}.stats p{font-size:10px;color:#a9c2e0}
-.trusted{background:#fff;border-radius:10px;color:#0a1931;padding:10px;display:flex;flex-direction:column;gap:6px;grid-column:span 2}
-.trusted-top{font-size:12px;font-weight:800;text-align:center}
-.trusted-icons{display:flex;justify-content:space-around;font-size:8px;font-weight:800;text-align:center}
-.bottom{display:flex;gap:20px;padding:30px 0;align-items:center}
-.bottom-left{flex:1}.bottom-right{flex:1;background:#eaf2ff;border-radius:16px;padding:20px}
-.bottom h2{font-size:28px;color:#0a1931;line-height:1.1}.bottom p{font-size:11px;color:#6b7f97;margin-top:8px;max-width:300px}
-@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.badges{grid-template-columns:repeat(2,1fr);position:relative;bottom:auto;left:auto;right:auto;margin:-10px auto 10px;width:92%}.hero{height:380px}.hero h1{font-size:28px}.stats{grid-template-columns:repeat(2,1fr)}.menu a{display:none}.menu .quote,.menu .login{display:block}}
+.header{display:flex;justify-content:space-between;align-items:center;padding:14px 0;flex-wrap:wrap;gap:10px}
+.logo{line-height:1}.l1{color:#123a6a;font-weight:900;font-size:15px;letter-spacing:.5px}.l2{color:#ff8c2f;font-weight:900;font-size:12px}
+.nav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.nav a{color:#4a5a72;text-decoration:none;font-size:11px;font-weight:700}
+.nav a.active{color:#123a6a;border-bottom:2px solid #ff8c2f}
+.q{background:#123a6a;color:#fff!important;padding:8px 14px;border-radius:7px;font-size:11px}
+.l{border:1px solid #d7deea;padding:7px 12px;border-radius:7px;font-size:11px}
+.hero{position:relative;background:#cfe3f5;min-height:380px}
+.hero img.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.6) 45%,rgba(0,0,0,0) 100%)}
+.hero-content{position:relative;z-index:2;padding:50px 0 80px 0;max-width:400px}
+.hero h1{font-size:36px;line-height:1.05;font-weight:900;color:#0f172a}
+.hero p{font-size:11px;color:#334155;margin:12px 0 16px;line-height:1.6}
+.track-btn{background:#fff;color:#123a6a;padding:10px 16px;border-radius:8px;font-size:12px;font-weight:800;text-decoration:none;display:inline-block;box-shadow:0 6px 18px rgba(0,0,0,.15)}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:20px}
+@media(min-width:700px){.badges{position:absolute;bottom:-28px;left:4%;right:4%;width:92%;margin:0;z-index:10}}
+.badge{background:#fff;border-radius:10px;padding:10px 12px;display:flex;gap:8px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.14);border:1px solid #eef2f7}
+.badge .ic{width:30px;height:30px;background:#eaf2ff;border-radius:8px;display:grid;place-items:center;font-size:15px}
+.badge b{font-size:11px;display:block;line-height:1}.badge span{font-size:9px;color:#64748b}
+.services{padding:70px 0 20px;text-align:center}
+.services h2{font-size:24px;color:#0f172a}.sub{font-size:11px;color:#64748b;margin:8px auto 18px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:left}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:26px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}}
+.card{border:1px solid #eef2f7;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+.card img{width:100%;height:110px;object-fit:cover;display:block;background:#f1f5f9}
+.card .bd{padding:10px}.card h3{font-size:12px;color:#0f172a}.card p{font-size:9.5px;color:#64748b;line-height:1.5;margin:5px 0;min-height:44px}.card small{background:#f1f5f9;padding:3px 6px;border-radius:4px;font-size:8px;font-weight:700;margin-right:4px;display:inline-block;margin-top:4px}
+.stats{background:#123a6a;color:#fff;padding:16px 12px;display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;gap:12px;margin-top:20px;border-radius:0}
+.stats h3{font-size:22px;text-align:center}.stats p{font-size:9px;color:#a9c2e0;text-align:center}
+.trust{background:#fff;color:#0f172a;border-radius:10px;padding:10px 14px;min-width:300px}
+.trust b{font-size:11px;display:block;text-align:center;margin-bottom:8px}
+.trust .icns{display:flex;justify-content:space-between;font-size:7px;font-weight:800;text-align:center;gap:8px}
+.bottom{display:flex;gap:16px;padding:28px 0;align-items:center;flex-wrap:wrap}
+.bottom-left{flex:1;min-width:200px}.bottom-right{flex:1;min-width:260px;background:#eaf2ff;border-radius:16px;padding:16px}
+.bottom h2{font-size:26px;line-height:1.1;color:#0f172a}.bottom p{font-size:10px;color:#64748b;margin-top:8px;max-width:300px}
+.bottom-right img{width:100%;border-radius:12px;display:block}
 </style>
 </head>
 <body>
 <div class="page">
 <div class="container header">
-<div class="logo"><div class="top">SWIFTORA</div><div class="bot">LOGISTICS</div></div>
-<div class="menu"><a class="active" href="#">Home</a><a href="#">Services</a><a href="#">Solutions</a><a href="#">Tracking</a><a href="#">About</a><a href="#">Contact</a><a class="quote" href="#">Get a Quote</a><a class="login" href="#">Log In</a><span>🔍</span></div>
+<div class="logo"><div class="l1">SWIFTORA</div><div class="l2">LOGISTICS</div></div>
+<div class="nav"><a class="active" href="#">Home</a><a href="#">Services</a><a href="#">Solutions</a><a href="#">Tracking</a><a href="#">About</a><a href="#">Contact</a><a class="q" href="#">Get a Quote</a><a class="l" href="#">Log In</a><span>🔍</span></div>
 </div>
 
 <div class="hero">
-<div class="hero-content container">
+<img class="hero-bg" src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200" alt="hero">
+<div class="container hero-content">
 <h1>Delivering the Future of Logistics</h1>
 <p>Fast, reliable, and sustainable logistics solutions powered by real-time tracking and global reach across 180+ countries.</p>
 <a class="track-btn" href="#">Track Your Shipment →</a>
+<div class="badges">
+<div class="badge"><div class="ic">24/7</div><div><b>24/7</b><span>Support</span></div></div>
+<div class="badge"><div class="ic">🏢</div><div><b>180+</b><span>Countries</span></div></div>
+<div class="badge"><div class="ic">♻️</div><div><b>Carbon Neutral</b><span>Certified</span></div></div>
+<div class="badge"><div class="ic">🚚</div><div><b>Explore</b><span>Services</span></div></div>
 </div>
-<div class="badges container">
-<div class="badge"><i>24/7</i><div><b>24/7</b><small>Support</small></div></div>
-<div class="badge"><i>🏢</i><div><b>180+</b><small>Countries</small></div></div>
-<div class="badge"><i>♻️</i><div><b>Carbon Neutral</b><small>Certified</small></div></div>
-<div class="badge"><i>🚚</i><div><b>Explore</b><small>Services</small></div></div>
 </div>
 </div>
 
@@ -73,22 +73,22 @@ body{background:#0f3b6b;padding:12px}
 <h2>Our Services</h2>
 <p class="sub">Comprehensive solutions tailored to keep your supply chain moving efficiently and reliably.</p>
 <div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400"><div class="card-body"><h3>Air Freight</h3><p>Express air shipping for time-critical shipments worldwide with real-time monitoring.</p><small>Fast-Reliable</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1559297434-fae8a1916a79?w=400"><div class="card-body"><h3>Warehousing</h3><p>Secure warehousing and fulfillment centers with smart inventory management.</p><small>Secure</small><small>Smart</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1494412651409-8963ce7935b4?w=400"><div class="card-body"><h3>Ocean Freight</h3><p>Cost-effective ocean freight solutions with global port coverage and customs support.</p><small>Global</small><small>Scalable</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400"><div class="card-body"><h3>Express Delivery</h3><p>Last-mile delivery powered by AI route optimization and same-day delivery options.</p><small>Fast On-Demand</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=500" alt="air"><div class="bd"><h3>Air Freight</h3><p>Express air shipping for time-critical shipments worldwide with real-time monitoring.</p><small>Fast-Reliable</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500" alt="warehousing"><div class="bd"><h3>Warehousing</h3><p>Secure warehousing and fulfillment centers with smart inventory management.</p><small>Secure</small><small>Smart</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1494412651409-8963ce7935b4?w=500" alt="ocean"><div class="bd"><h3>Ocean Freight</h3><p>Cost-effective ocean freight solutions with global port coverage and customs support.</p><small>Global</small><small>Scalable</small></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1519003722824-194243985276?w=500" alt="express"><div class="bd"><h3>Express Delivery</h3><p>Last-mile delivery powered by AI route optimization and same-day delivery options.</p><small>Fast On-Demand</small></div></div>
 </div>
 </div>
 
-<div class="stats container">
-<div class="item"><h3>10K+</h3><p>Shipments Monthly</p></div>
-<div class="item"><h3>99.8%</h3><p>On-Time Delivery</p></div>
-<div class="trusted"><div class="trusted-top">Trusted by industry leaders worldwide</div><div class="trusted-icons"><div>ISO<br>ISO 9001</div><div>500+<br>Partners Worldwide</div><div>IATA<br>Certified</div><div>Carbon<br>Neutral</div><div>GDP<br>Compliant</div></div></div>
+<div class="stats">
+<div><h3>10K+</h3><p>Shipments Monthly</p></div>
+<div><h3>99.8%</h3><p>On-Time Delivery</p></div>
+<div class="trust"><b>Trusted by industry leaders worldwide</b><div class="icns"><div>ISO<br>ISO 9001</div><div>500+<br>Partners Worldwide</div><div>IATA<br>Certified</div><div>Carbon<br>Neutral</div><div>GDP<br>Compliant</div></div></div>
 </div>
 
 <div class="bottom container">
 <div class="bottom-left"><h2>Delivering the<br>Logistics</h2><p>Fast, reliable and sustainable logistics solutions powered by+ countries.</p></div>
-<div class="bottom-right"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600" style="width:100%;border-radius:12px"></div>
+<div class="bottom-right"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600" alt="bottom"></div>
 </div>
 
 </div>
