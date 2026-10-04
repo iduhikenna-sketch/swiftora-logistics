@@ -1,91 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SWIFTORA LOGISTICS</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{background:#123a6a;padding:10px}
-.page{background:#fff;border-radius:18px;overflow:hidden;max-width:1100px;margin:auto}
-.container{width:92%;margin:auto}
-.header{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
-.logo{line-height:1}.l1{color:#123a6a;font-weight:900;font-size:14px}.l2{color:#ff8c2f;font-weight:900;font-size:11px}
-.nav{display:flex;gap:10px;align-items:center}.nav a{color:#4a5a72;text-decoration:none;font-size:11px;font-weight:700}.nav a.active{border-bottom:2px solid #ff8c2f}.q{background:#123a6a;color:#fff!important;padding:7px 12px;border-radius:6px;font-size:11px}.l{border:1px solid #d7deea;padding:6px 10px;border-radius:6px}
-.hero{position:relative;height:400px;background:#000}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.5) 40%,rgba(0,0,0,0) 100%)}
-.hero-content{position:relative;z-index:2;padding:50px 0 0 0;max-width:380px}
-.hero h1{font-size:32px;line-height:1.1;font-weight:900;color:#0f172a}
-.hero p{font-size:11px;color:#334155;margin:10px 0 14px;line-height:1.5}
-.track-btn{background:#fff;color:#123a6a;padding:10px 14px;border-radius:8px;font-size:11px;font-weight:800;text-decoration:none;display:inline-block;box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.badges{position:absolute;bottom:-26px;left:4%;right:4%;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;z-index:10;width:92%}
-.badge{background:#fff;border-radius:10px;padding:10px;display:flex;gap:6px;align-items:center;box-shadow:0 8px 20px rgba(0,0,0,.15);border:1px solid #eef2f7}
-.badge .ic{width:28px;height:28px;background:#eaf2ff;border-radius:7px;display:grid;place-items:center}
-.badge b{font-size:10px}.badge small{font-size:8px;color:#64748b;display:block}
-.services{padding:60px 0 16px;text-align:center}
-.services h2{font-size:22px}.sub{font-size:10px;color:#64748b;margin:6px auto 16px;max-width:540px}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:left}
-.card{border:1px solid #eef2f7;border-radius:10px;overflow:hidden;background:#fff}
-.card img{width:100%;height:100px;object-fit:cover;display:block}
-.card .bd{padding:8px}.card h3{font-size:11px}.card p{font-size:8.5px;color:#64748b;line-height:1.4;margin:4px 0;min-height:38px}.card small{background:#f1f5f9;padding:2px 5px;border-radius:3px;font-size:7px;font-weight:700}
-.stats{background:#123a6a;color:#fff;padding:14px;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:10px;margin-top:16px}
-.stats h3{font-size:20px;text-align:center}.stats p{font-size:8px;color:#a9c2e0;text-align:center}
-.trust{background:#fff;color:#0f172a;border-radius:8px;padding:8px 12px;min-width:280px}
-.trust b{font-size:10px;display:block;text-align:center;margin-bottom:6px}
-.trust .icons{display:flex;justify-content:space-between;font-size:6px;font-weight:800;gap:6px;text-align:center}
-.bottom{display:flex;gap:14px;padding:22px 0;align-items:center;flex-wrap:wrap}
-.bottom-left{flex:1;min-width:180px}.bottom-right{flex:1;min-width:240px;background:#eaf2ff;border-radius:14px;padding:12px}
-.bottom h2{font-size:22px;line-height:1.1}.bottom p{font-size:9px;color:#64748b;margin-top:6px}
-.bottom-right img{width:100%;border-radius:10px;display:block}
-@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr)}.hero{height:auto;padding-bottom:60px}.badges{position:relative;bottom:auto;left:auto;right:auto;margin:20px auto 0;width:100%}.hero h1{font-size:24px}}
-</style>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="SWIFTORA LOGISTICS — Worldwide delivery and logistics solutions. Moving What Matters."
+    >
+
+    <title>SWIFTORA LOGISTICS | Moving What Matters.</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div class="page">
-<div class="container header">
-<div class="logo"><div class="l1">SWIFTORA</div><div class="l2">LOGISTICS</div></div>
-<div class="nav"><a class="active" href="#">Home</a><a href="#">Services</a><a href="#">Solutions</a><a href="#">Tracking</a><a href="#">About</a><a href="#">Contact</a><a class="q" href="#">Get a Quote</a><a class="l" href="#">Log In</a>🔍</div>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="container header-inner">
+
+            <a href="#home" class="logo">
+                <div class="l1">SWIFTORA</div>
+                <div class="l2">LOGISTICS</div>
+            </a>
+
+            <nav class="nav">
+
+                <a class="active" href="#home">Home</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#solutions">Solutions</a>
+
+                <a href="#tracking">Tracking</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+                <a class="q" href="#quote">
+                    Get a Quote
+                </a>
+
+                <a class="l" href="#login">
+                    Log In
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <img
+            class="hero-bg"
+            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=85"
+            alt="International air transportation"
+        >
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-copy">
+
+                <div class="hero-label">
+                    WORLDWIDE DELIVERY & LOGISTICS
+                </div>
+
+                <h1>
+                    Moving What
+                    <span>Matters.</span>
+                </h1>
+
+                <p>
+                    Professional logistics solutions for
+                    documents, parcels, cargo and business
+                    shipments moving across borders and around
+                    the world.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        class="track-btn"
+                        href="#tracking"
+                    >
+                        Track Your Shipment →
+                    </a>
+
+                    <a
+                        class="quote-btn"
+                        href="#quote"
+                    >
+                        Ship With Swiftora
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRUST / QUICK FEATURES -->
+
+    <section class="features">
+
+        <div class="container feature-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🌍
+                </div>
+
+                <div>
+                    <b>180+ Countries</b>
+                    <small>Worldwide delivery reach</small>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📦
+                </div>
+
+                <div>
+                    <b>10K+ Shipments Monthly</b>
+                    <small>Shipments handled every month</small>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <div>
+                    <b>99.8% On-Time Delivery</b>
+                    <small>Reliable delivery performance</small>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🛃
+                </div>
+
+                <div>
+                    <b>Customs Support</b>
+                    <small>Guidance when action is required</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRACKING -->
+
+    <section
+        class="tracking-section"
+        id="tracking"
+    >
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="section-label">
+                    SHIPMENT TRACKING
+                </div>
+
+                <h2>
+                    Know where your shipment is.
+                </h2>
+
+                <p>
+                    Enter your Swiftora tracking number to
+                    view the latest shipment event.
+                </p>
+
+            </div>
+
+
+            <div class="tracking-panel">
+
+                <form id="trackingForm">
+
+                    <input
+                        id="trackingNumber"
+                        type="text"
+                        placeholder="Enter tracking number e.g. SWF-00124873"
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit">
+                        Track Shipment
+                    </button>
+
+                </form>
+
+                <div id="trackingResult"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section
+        class="services"
+        id="services"
+    >
+
+        <div class="container">
+
+            <div class="section-title center">
+
+                <div class="section-label">
+                    OUR SERVICES
+                </div>
+
+                <h2>
+                    Logistics built around your needs.
+                </h2>
+
+                <p>
+                    Flexible delivery and logistics solutions
+                    for individuals, businesses and organizations.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=700&q=85"
+                        alt="Air freight"
+                    >
+
+                    <div class="bd">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Air Freight
+                        </h3>
+
+                        <p>
+                            Air shipping solutions for time-sensitive
+                            international shipments.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=85"
+                        alt="Logistics warehouse"
+                    >
+
+                    <div class="bd">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Warehousing
+                        </h3>
+
+                        <p>
+                            Organized storage and fulfillment support
+                            for business logistics.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578573556050-3220e0e6b7e0?auto=format&fit=crop&w=700&q=85"
+                        alt="Ocean freight"
+                    >
+
+                    <div class="bd">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Ocean Freight
+                        </h3>
+
+                        <p>
+                            Freight solutions for larger shipments
+                            moving through international ports.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519003722824-194243985276?auto=format&fit=crop&w=700&q=85"
+                        alt="Delivery vehicle"
+                    >
+
+                    <div class="bd">
+
+                        <div class="card-number">
+                            04
+                        </div>
+
+                        <h3>
+                            Express Delivery
+                        </h3>
+
+                        <p>
+                            Reliable last-mile delivery for parcels,
+                            documents and business shipments.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERFORMANCE -->
+
+    <section class="performance">
+
+        <div class="container">
+
+            <div class="performance-grid">
+
+                <div class="performance-card">
+                    <strong>10K+</strong>
+                    <span>Shipments Monthly</span>
+                </div>
+
+                <div class="performance-card">
+                    <strong>99.8%</strong>
+                    <span>On-Time Delivery</span>
+                </div>
+
+                <div class="performance-card">
+                    <strong>180+</strong>
+                    <span>Countries</span>
+                </div>
+
+                <div class="performance-card">
+                    <strong>24/7</strong>
+                    <span>Customer Support</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOLUTIONS -->
+
+    <section
+        class="solutions"
+        id="solutions"
+    >
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="section-label">
+                    LOGISTICS SOLUTIONS
+                </div>
+
+                <h2>
+                    Built for people and businesses.
+                </h2>
+
+                <p>
+                    Swiftora supports different shipping needs
+                    from individual parcels to recurring
+                    business logistics.
+                </p>
+
+            </div>
+
+
+            <div class="solution-grid">
+
+                <div class="solution-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Personal Shipping
+                    </h3>
+
+                    <p>
+                        Send documents, packages and eligible
+                        goods to their destination.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        E-commerce Logistics
+                    </h3>
+
+                    <p>
+                        Help online businesses move products
+                        from sellers to customers.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Business Logistics
+                    </h3>
+
+                    <p>
+                        Manage recurring shipments and delivery
+                        operations through one platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS & PARTNERS -->
+
+    <section class="credentials">
+
+        <div class="container">
+
+            <div class="section-title center">
+
+                <div class="section-label">
+                    TRUST & COMPLIANCE
+                </div>
+
+                <h2>
+                    Built for dependable logistics.
+                </h2>
+
+                <p>
+                    Professional standards, industry relationships
+                    and compliance remain central to our logistics
+                    operations.
+                </p>
+
+            </div>
+
+
+            <div class="credential-grid">
+
+                <div class="credential">
+                    <strong>ISO9001</strong>
+                    <span>Quality Standard</span>
+                </div>
+
+                <div class="credential">
+                    <strong>500+</strong>
+                    <span>Partners</span>
+                </div>
+
+                <div class="credential">
+                    <strong>IATA</strong>
+                    <span>Certified</span>
+                </div>
+
+                <div class="credential">
+                    <strong>Carbon Neutral</strong>
+                    <span>Logistics Commitment</span>
+                </div>
+
+                <div class="credential">
+                    <strong>GDP</strong>
+                    <span>Compliant</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHIPMENT JOURNEY -->
+
+    <section
+        class="journey"
+        id="about"
+    >
+
+        <div class="container">
+
+            <div class="section-title center">
+
+                <div class="section-label">
+                    THE SWIFTORA JOURNEY
+                </div>
+
+                <h2>
+                    From pickup to destination.
+                </h2>
+
+                <p>
+                    Customers can follow shipment events
+                    throughout the delivery journey.
+                </p>
+
+            </div>
+
+
+            <div class="journey-grid">
+
+                <div class="journey-step">
+                    <span>01</span>
+                    <strong>Picked Up</strong>
+                    <small>Shipment collected</small>
+                </div>
+
+                <div class="journey-line"></div>
+
+                <div class="journey-step">
+                    <span>02</span>
+                    <strong>In Transit</strong>
+                    <small>Shipment moving</small>
+                </div>
+
+                <div class="journey-line"></div>
+
+                <div class="journey-step">
+                    <span>03</span>
+                    <strong>Customs</strong>
+                    <small>Clearance when required</small>
+                </div>
+
+                <div class="journey-line"></div>
+
+                <div class="journey-step">
+                    <span>04</span>
+                    <strong>Delivered</strong>
+                    <small>Destination reached</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUSTOMS -->
+
+    <section class="customs">
+
+        <div class="container customs-inner">
+
+            <div>
+
+                <div class="section-label">
+                    INTERNATIONAL SHIPPING
+                </div>
+
+                <h2>
+                    Customs shouldn't leave you guessing.
+                </h2>
+
+                <p>
+                    When an international shipment requires
+                    customs action, customers can see the status
+                    and the next required step through their
+                    shipment dashboard.
+                </p>
+
+            </div>
+
+
+            <div class="customs-box">
+
+                <div class="customs-status">
+                    CUSTOMS CLEARANCE
+                </div>
+
+                <h3>
+                    Action Required
+                </h3>
+
+                <p>
+                    Additional documentation may be required
+                    before a shipment can continue.
+                </p>
+
+                <div class="customs-action">
+                    View Required Action →
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUOTE -->
+
+    <section
+        class="quote-section"
+        id="quote"
+    >
+
+        <div class="container">
+
+            <div class="quote-box">
+
+                <div>
+
+                    <div class="section-label">
+                        READY TO SHIP?
+                    </div>
+
+                    <h2>
+                        Move what matters with Swiftora.
+                    </h2>
+
+                    <p>
+                        Shipping requests, destination details
+                        and delivery information will be managed
+                        through the Swiftora platform.
+                    </p>
+
+                </div>
+
+                <a href="#contact">
+                    Request Shipping →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+        class="contact"
+        id="contact"
+    >
+
+        <div class="container">
+
+            <div class="section-title center">
+
+                <div class="section-label">
+                    CUSTOMER SUPPORT
+                </div>
+
+                <h2>
+                    We're here to help.
+                </h2>
+
+                <p>
+                    Swiftora support will help customers with
+                    shipments, tracking, documentation and
+                    delivery questions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOGIN -->
+
+    <section
+        class="login-section"
+        id="login"
+    >
+
+        <div class="container">
+
+            <h2>
+                Customer & Business Portal
+            </h2>
+
+            <p>
+                Secure customer and business dashboards will
+                allow users to manage shipments and track
+                delivery activity.
+            </p>
+
+            <button>
+                Log In
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <strong>
+                    SWIFTORA LOGISTICS
+                </strong>
+
+                <p>
+                    Moving What Matters.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    Worldwide Delivery & Logistics
+                </p>
+
+                <p>
+                    © 2026 Swiftora Logistics.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
 </div>
 
-<div class="hero">
-<img class="hero-bg" src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80" alt="plane wing">
-<div class="container hero-content">
-<h1>Delivering the Future of Logistics</h1>
-<p>Fast, reliable, and sustainable logistics solutions powered by real-time tracking and global reach across 180+ countries.</p>
-<a class="track-btn" href="#">Track Your Shipment →</a>
-<div class="badges">
-<div class="badge"><div class="ic">24/7</div><div><b>24/7</b><small>Support</small></div></div>
-<div class="badge"><div class="ic">🏢</div><div><b>180+</b><small>Countries</small></div></div>
-<div class="badge"><div class="ic">♻️</div><div><b>Carbon Neutral</b><small>Certified</small></div></div>
-<div class="badge"><div class="ic">🚚</div><div><b>Explore</b><small>Services</small></div></div>
-</div>
-</div>
-</div>
 
-<div class="services container">
-<h2>Our Services</h2>
-<p class="sub">Comprehensive solutions tailored to keep your supply chain moving efficiently and reliably.</p>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=500&q=80"><div class="bd"><h3>Air Freight</h3><p>Express air shipping for time-critical shipments worldwide with real-time monitoring.</p><small>Fast-Reliable</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=500&q=80"><div class="bd"><h3>Warehousing</h3><p>Secure warehousing and fulfillment centers with smart inventory management.</p><small>Secure</small><small>Smart</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1578573556050-3220e0e6b7e0?auto=format&fit=crop&w=500&q=80"><div class="bd"><h3>Ocean Freight</h3><p>Cost-effective ocean freight solutions with global port coverage and customs support.</p><small>Global</small><small>Scalable</small></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1519003722824-194243985276?auto=format&fit=crop&w=500&q=80"><div class="bd"><h3>Express Delivery</h3><p>Last-mile delivery powered by AI route optimization and same-day delivery options.</p><small>Fast On-Demand</small></div></div>
-</div>
-</div>
+<script src="script.js"></script>
 
-<div class="stats">
-<div><h3>10K+</h3><p>Shipments Monthly</p></div>
-<div><h3>99.8%</h3><p>On-Time Delivery</p></div>
-<div class="trust"><b>Trusted by industry leaders worldwide</b><div class="icons"><div>ISO<br>9001</div><div>500+<br>Partners</div><div>IATA<br>Certified</div><div>Carbon<br>Neutral</div><div>GDP<br>Compliant</div></div></div>
-</div>
-
-<div class="bottom container">
-<div class="bottom-left"><h2>Delivering the<br>Logistics</h2><p>Fast, reliable and sustainable logistics solutions powered by+ countries.</p></div>
-<div class="bottom-right"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=600&q=80"></div>
-</div>
-
-</div>
-</div>
 </body>
 </html>
