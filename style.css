@@ -1,599 +1,76 @@
-/* =========================================
-   SWIFTORA LOGISTICS
-   Premium Global Logistics Website
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #10233f;
-    background: #ffffff;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button,
-input {
-    font: inherit;
-}
-
-.container {
-    width: min(1160px, 92%);
-    margin: 0 auto;
-}
-
-/* =========================================
-   HEADER
-========================================= */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.97);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid #e6edf5;
-}
-
-.header-inner {
-    min-height: 78px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 11px;
-}
-
-.logo-mark {
-    width: 44px;
-    height: 44px;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #0757d9, #168cff);
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 900;
-    box-shadow: 0 8px 20px rgba(7, 87, 217, 0.25);
-}
-
-.logo strong {
-    display: block;
-    color: #10233f;
-    font-size: 17px;
-    letter-spacing: 1.3px;
-}
-
-.logo small {
-    display: block;
-    color: #0757d9;
-    font-size: 9px;
-    font-weight: 800;
-    letter-spacing: 2.4px;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.main-nav a {
-    color: #52647c;
-    font-size: 14px;
-    font-weight: 700;
-    transition: 0.3s ease;
-}
-
-.main-nav a:hover {
-    color: #0757d9;
-}
-
-.header-button {
-    background: #0757d9;
-    color: #ffffff;
-    padding: 12px 21px;
-    border-radius: 7px;
-    font-size: 14px;
-    font-weight: 800;
-    transition: 0.3s ease;
-}
-
-.header-button:hover {
-    background: #0647b0;
-    transform: translateY(-2px);
-}
-
-/* =========================================
-   HERO
-========================================= */
-
-.hero {
-    min-height: 700px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-
-    background-image:
-        linear-gradient(
-            90deg,
-            rgba(3, 19, 39, 0.96) 0%,
-            rgba(5, 30, 58, 0.82) 42%,
-            rgba(5, 30, 58, 0.48) 75%,
-            rgba(5, 30, 58, 0.32) 100%
-        ),
-        url("https://upload.wikimedia.org/wikipedia/commons/e/e6/Delivery_truck_at_sunrise_%28Unsplash%29.jpg");
-
-    background-size: cover;
-    background-position: center;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(
-            circle at 85% 30%,
-            rgba(35, 143, 255, 0.22),
-            transparent 32%
-        );
-    pointer-events: none;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-text {
-    max-width: 790px;
-    padding: 105px 0;
-}
-
-.eyebrow {
-    color: #43a3ff;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: 2.4px;
-    margin-bottom: 17px;
-}
-
-.hero h1 {
-    color: #ffffff;
-    font-size: clamp(52px, 8vw, 88px);
-    line-height: 0.96;
-    letter-spacing: -4px;
-    margin-bottom: 28px;
-}
-
-.hero h1 span {
-    color: #48a4ff;
-}
-
-.hero-description {
-    max-width: 670px;
-    color: #d9e6f4;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 34px;
-}
-
-/* =========================================
-   TRACKING BOX
-========================================= */
-
-.tracking-box {
-    max-width: 780px;
-    padding: 25px;
-    border-radius: 13px;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-}
-
-.tracking-box strong {
-    color: #10233f;
-    font-size: 17px;
-}
-
-.tracking-box p {
-    color: #718198;
-    font-size: 13px;
-    margin: 4px 0 16px;
-}
-
-#trackingForm {
-    display: flex;
-    gap: 10px;
-}
-
-#trackingNumber {
-    flex: 1;
-    min-width: 0;
-    padding: 15px 16px;
-    border: 1px solid #d7e0eb;
-    border-radius: 7px;
-    outline: none;
-    color: #10233f;
-    background: #ffffff;
-}
-
-#trackingNumber:focus {
-    border-color: #0757d9;
-    box-shadow: 0 0 0 3px rgba(7, 87, 217, 0.08);
-}
-
-#trackingForm button {
-    border: none;
-    border-radius: 7px;
-    padding: 0 23px;
-    background: #0757d9;
-    color: #ffffff;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-#trackingForm button:hover {
-    background: #0647b0;
-    transform: translateY(-1px);
-}
-
-#trackingResult {
-    margin-top: 14px;
-}
-
-/* =========================================
-   HERO BUTTONS
-========================================= */
-
-.hero-actions {
-    display: flex;
-    gap: 12px;
-    margin-top: 24px;
-}
-
-.primary-button,
-.secondary-button {
-    display: inline-block;
-    padding: 14px 24px;
-    border-radius: 7px;
-    font-size: 14px;
-    font-weight: 800;
-    transition: 0.3s ease;
-}
-
-.primary-button {
-    background: #0757d9;
-    color: #ffffff;
-}
-
-.secondary-button {
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.primary-button:hover {
-    background: #0647b0;
-    transform: translateY(-2px);
-}
-
-.secondary-button:hover {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-/* =========================================
-   TRACKING RESULT
-========================================= */
-
-.tracking-message {
-    padding: 16px;
-    border-radius: 8px;
-    background: #f2f6fb;
-    color: #40546d;
-    font-size: 14px;
-}
-
-.tracking-message p {
-    margin: 6px 0 0;
-}
-
-.tracking-success {
-    border-left: 4px solid #168cff;
-}
-
-.tracking-error {
-    border-left: 4px solid #d43c3c;
-}
-
-/* =========================================
-   SERVICES
-========================================= */
-
-.services {
-    padding: 105px 0;
-    background: #f6f9fc;
-}
-
-.section-heading {
-    max-width: 720px;
-    margin-bottom: 48px;
-}
-
-.section-heading h2,
-.about h2,
-.contact h2 {
-    color: #10233f;
-    font-size: clamp(34px, 5vw, 54px);
-    line-height: 1.08;
-    letter-spacing: -1.8px;
-    margin-bottom: 17px;
-}
-
-.section-heading > p:last-child {
-    color: #65758b;
-    font-size: 16px;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.service-card {
-    position: relative;
-    overflow: hidden;
-    background: #ffffff;
-    padding: 31px;
-    min-height: 225px;
-    border: 1px solid #e2eaf3;
-    border-radius: 11px;
-    transition: 0.3s ease;
-}
-
-.service-card::after {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: -45px;
-    bottom: -45px;
-    border-radius: 50%;
-    background: rgba(7, 87, 217, 0.05);
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-    border-color: #a8c9f5;
-    box-shadow: 0 18px 40px rgba(24, 65, 110, 0.1);
-}
-
-.service-card span {
-    color: #0757d9;
-    font-size: 12px;
-    font-weight: 900;
-}
-
-.service-card h3 {
-    margin: 24px 0 10px;
-    color: #10233f;
-    font-size: 20px;
-}
-
-.service-card p {
-    color: #68798e;
-    font-size: 14px;
-}
-
-/* =========================================
-   ABOUT
-========================================= */
-
-.about {
-    padding: 115px 0;
-    background: #ffffff;
-}
-
-.about h2 {
-    max-width: 780px;
-}
-
-.about > .container > p:last-child {
-    max-width: 740px;
-    color: #65758b;
-    font-size: 17px;
-    line-height: 1.8;
-}
-
-/* =========================================
-   CONTACT
-========================================= */
-
-.contact {
-    padding: 105px 0;
-    background:
-        linear-gradient(
-            135deg,
-            #eef6ff,
-            #f7fbff
-        );
-}
-
-.contact h2 {
-    max-width: 700px;
-}
-
-.contact p:last-child {
-    color: #65758b;
-}
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    padding: 48px 0;
-    background: #061a33;
-    color: #ffffff;
-}
-
-footer strong {
-    letter-spacing: 1.3px;
-}
-
-footer p {
-    color: #9eb0c5;
-    font-size: 13px;
-    margin-top: 7px;
-}
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .main-nav {
-        gap: 16px;
-    }
-
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero {
-        background-position: 65% center;
-    }
-}
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 700px) {
-
-    .header-inner {
-        min-height: 68px;
-    }
-
-    .main-nav {
-        display: none;
-    }
-
-    .header-button {
-        padding: 10px 14px;
-        font-size: 12px;
-    }
-
-    .hero {
-        min-height: auto;
-        background-position: 65% center;
-    }
-
-    .hero-text {
-        padding: 75px 0 80px;
-    }
-
-    .hero h1 {
-        font-size: 54px;
-        letter-spacing: -2.5px;
-    }
-
-    .hero-description {
-        font-size: 16px;
-    }
-
-    .tracking-box {
-        padding: 19px;
-    }
-
-    #trackingForm {
-        flex-direction: column;
-    }
-
-    #trackingForm button {
-        min-height: 49px;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-    }
-
-    .primary-button,
-    .secondary-button {
-        text-align: center;
-    }
-
-    .services {
-        padding: 78px 0;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about,
-    .contact {
-        padding: 80px 0;
-    }
-}
-
-/* =========================================
-   SMALL PHONES
-========================================= */
-
-@media (max-width: 430px) {
-
-    .logo strong {
-        font-size: 13px;
-    }
-
-    .logo small {
-        font-size: 7px;
-        letter-spacing: 1.8px;
-    }
-
-    .logo-mark {
-        width: 37px;
-        height: 37px;
-        font-size: 19px;
-    }
-
-    .header-button {
-        font-size: 11px;
-        padding: 9px 11px;
-    }
-
-    .hero h1 {
-        font-size: 45px;
-    }
-
-    .tracking-box {
-        padding: 17px;
-    }
-
-    .tracking-box strong {
-        font-size: 15px;
-    }
-}
+/* SWIFTORA - COLORFUL BEAUTIFUL VERSION - Image 1 Style */
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#10233f;background:#ffffff;line-height:1.6}
+.container{width:min(1160px,92%);margin:0 auto}
+
+/* HEADER - DARK BLUE LIKE IMAGE 1 */
+.site-header{position:sticky;top:0;z-index:1000;background:#061a33;border-bottom:1px solid #0a2a52}
+.header-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-mark{width:40px;height:40px;display:grid;place-items:center;border-radius:9px;background:#fff;color:#061a33;font-weight:900;font-size:20px}
+.logo strong{display:block;color:#fff;font-size:16px;letter-spacing:1.3px}
+.logo small{display:block;color:#4cc2ff;font-size:9px;letter-spacing:2px;font-weight:800}
+.main-nav{display:flex;gap:26px}
+.main-nav a{color:#a9c2e0;font-size:13px;font-weight:700;text-decoration:none;transition:.3s}
+.main-nav a:hover{color:#fff}
+.header-button{background:linear-gradient(135deg,#0757d9,#4cc2ff);color:#fff;padding:11px 18px;border-radius:7px;font-size:13px;font-weight:800;text-decoration:none;transition:.3s}
+.header-button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(76,194,255,.3)}
+
+/* HERO - DARK BLUE COLORFUL */
+.hero{min-height:680px;display:flex;align-items:center;position:relative;overflow:hidden;background-image:linear-gradient(90deg,rgba(6,26,51,0.98) 0%,rgba(6,26,51,0.85) 50%,rgba(6,26,51,0.4) 100%), url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200");background-size:cover;background-position:center}
+.hero-text{max-width:760px;padding:90px 0}
+.eyebrow{color:#4cc2ff;font-size:11px;font-weight:900;letter-spacing:2.4px;margin-bottom:14px}
+.hero h1{color:#fff;font-size:clamp(50px,7vw,78px);line-height:.95;letter-spacing:-3px;margin-bottom:18px}
+.hero h1 span{color:#4cc2ff;background:linear-gradient(135deg,#4cc2ff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-description{max-width:620px;color:#b9d2f0;font-size:17px;line-height:1.6;margin-bottom:28px}
+
+/* TRACKING - COLORFUL */
+.tracking-box{max-width:760px;padding:22px;border-radius:12px;background:#ffffff;box-shadow:0 20px 50px rgba(0,0,0,.3);border:1px solid #eef2f7}
+.tracking-box strong{color:#061a33;font-size:16px}
+.tracking-box p{color:#718198;font-size:12px;margin:3px 0 14px}
+#trackingForm{display:flex;gap:10px}
+#trackingNumber{flex:1;padding:14px 15px;border:1px solid #d7e0eb;border-radius:8px;outline:none}
+#trackingNumber:focus{border-color:#0757d9;box-shadow:0 0 0 3px rgba(7,87,217,.1)}
+#trackingForm button{border:none;border-radius:8px;padding:0 22px;background:linear-gradient(135deg,#061a33,#0757d9);color:#fff;font-weight:800;cursor:pointer;transition:.3s}
+#trackingForm button:hover{transform:translateY(-1px)}
+
+/* HERO BUTTONS */
+.hero-actions{display:flex;gap:12px;margin-top:22px}
+.primary-button,.secondary-button{padding:13px 22px;border-radius:8px;font-size:14px;font-weight:800;text-decoration:none;transition:.3s}
+.primary-button{background:linear-gradient(135deg,#0757d9,#4cc2ff);color:#fff}
+.secondary-button{border:1px solid rgba(255,255,255,.3);color:#fff;background:rgba(255,255,255,.06)}
+.primary-button:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(7,87,217,.35)}
+.secondary-button:hover{background:rgba(255,255,255,.12)}
+
+/* SERVICES - COLORFUL CARDS LIKE IMAGE 1 */
+.services{padding:90px 0;background:linear-gradient(180deg,#f8fbff 0%,#f2f6fb 100%)}
+.section-heading{max-width:700px;margin-bottom:40px}
+.section-heading h2,.about h2,.contact h2{color:#061a33;font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-1.5px;margin-bottom:14px}
+.section-heading p{color:#65758b}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{position:relative;overflow:hidden;background:#fff;padding:28px;min-height:200px;border:1px solid #e2eaf3;border-radius:14px;transition:.35s}
+.service-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#0757d9,#4cc2ff)}
+.service-card:nth-child(2)::before{background:linear-gradient(90deg,#00c950,#4ade80)}
+.service-card:nth-child(3)::before{background:linear-gradient(90deg,#ff8a00,#fb923c)}
+.service-card:nth-child(4)::before{background:linear-gradient(90deg,#7c3aed,#a78bfa)}
+.service-card:nth-child(5)::before{background:linear-gradient(90deg,#db2777,#f472b6)}
+.service-card:nth-child(6)::before{background:linear-gradient(90deg,#0891b2,#22d3ee)}
+.service-card:hover{transform:translateY(-7px);box-shadow:0 18px 40px rgba(6,26,51,.12);border-color:#c7d8f0}
+.service-card span{color:#0757d9;font-size:11px;font-weight:900;background:#e0f2fe;padding:4px 8px;border-radius:20px}
+.service-card h3{margin:18px 0 8px;color:#061a33;font-size:18px}
+.service-card p{color:#68798e;font-size:14px}
+
+/* ABOUT & CONTACT */
+.about{padding:100px 0;background:#fff}
+.about p:last-child{max-width:700px;color:#65758b;font-size:17px;line-height:1.7;margin-top:14px}
+.contact{padding:90px 0;background:linear-gradient(135deg,#061a33,#0a2a52);color:#fff}
+.contact .eyebrow{color:#4cc2ff}
+.contact h2{color:#fff}
+.contact p:last-child{color:#a9c2e0}
+
+footer{padding:36px 0;background:#040f20;color:#7ea0c8;text-align:center}
+footer strong{color:#fff;letter-spacing:1px}
+
+@media(max-width:900px){.service-grid{grid-template-columns:repeat(2,1fr)}.main-nav{display:none}}
+@media(max-width:600px){.service-grid{grid-template-columns:1fr}.hero-text{padding:60px 0}.hero h1{font-size:46px}#trackingForm{flex-direction:column}#trackingForm button{height:48px}}
